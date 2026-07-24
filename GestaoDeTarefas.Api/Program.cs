@@ -1,10 +1,29 @@
-﻿using Scalar.AspNetCore;
+﻿using System.Text.Json.Serialization;
+using GestaoDeTarefas.Domain.Interfaces;
+using GestaoDeTarefas.Infrastructure.Context;
+using GestaoDeTarefas.Infrastructure.Repositories;
+using Microsoft.EntityFrameworkCore;
+using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+
+// 1. Configura Controllers e conversão de Enums para texto no JSON
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+    });
+
 builder.Services.AddOpenApi();
+
+// 3. Banco de dados InMemory
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseInMemoryDatabase("GestaoDeTarefasDb"));
+
+// 4. Injeção de Dependência
+builder.Services.AddScoped<ITarefaRepository, TarefaRepository>();
 
 var app = builder.Build();
 
@@ -16,29 +35,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseAuthorization();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-            new WeatherForecast
-            (
-                DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                Random.Shared.Next(-20, 55),
-                summaries[Random.Shared.Next(summaries.Length)]
-            ))
-        .ToArray();
-    return forecast;
-})
-    .WithName("GetWeatherForecast");
+app.MapControllers();
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

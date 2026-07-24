@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestaoDeTarefas.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+101900ac582110351c518360340e7eaa69d67e34")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d6c04cc1f86879250499df7c1be7eace0ec9fab")]
 [assembly: System.Reflection.AssemblyProductAttribute("GestaoDeTarefas.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestaoDeTarefas.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
