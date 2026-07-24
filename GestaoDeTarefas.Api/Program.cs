@@ -23,6 +23,23 @@ builder.Services.AddOpenApi(options =>
             ### Como usar:
             1. Para criar uma tarefa, envie um `POST` para `/api/tarefas`.
             2. O formato de data utilizado para vencimentos é `YYYY-MM-DD`.
+            3. É possível criar uma tarefa com os status:
+
+                Pendente;
+
+                EmProgresso;
+
+                Concluida;
+                
+                Ou caso, prefira, com o Id, que corresponde aos seguintes status:
+
+                1 = Pendente;
+
+                2 = EmProgresso;
+
+                3 = Concluida;
+
+                Sempre retornará a descrição do status.
             """;
 
         return Task.CompletedTask;

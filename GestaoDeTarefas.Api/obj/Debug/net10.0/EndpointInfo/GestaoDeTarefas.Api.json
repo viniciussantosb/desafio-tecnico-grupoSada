@@ -2,7 +2,7 @@
   "openapi": "3.1.1",
   "info": {
     "title": "API de Gestão de Tarefas",
-    "description": "## API de Gestão de Tarefas\r\n\r\n### Como usar:\r\n1. Para criar uma tarefa, envie um `POST` para `/api/tarefas`.\r\n2. O formato de data utilizado para vencimentos é `YYYY-MM-DD`.",
+    "description": "## API de Gestão de Tarefas\r\n\r\n### Como usar:\r\n1. Para criar uma tarefa, envie um `POST` para `/api/tarefas`.\r\n2. O formato de data utilizado para vencimentos é `YYYY-MM-DD`.\r\n3. É possível criar uma tarefa com os status:\r\n\r\n    Pendente;\r\n\r\n    EmProgresso;\r\n\r\n    Concluida;\r\n    \r\n    Ou caso, prefira, com o Id, que corresponde aos seguintes status:\r\n\r\n    1 = Pendente;\r\n\r\n    2 = EmProgresso;\r\n\r\n    3 = Concluida;\r\n\r\n    Sempre retornará a descrição do status.",
     "version": "v1"
   },
   "servers": [
