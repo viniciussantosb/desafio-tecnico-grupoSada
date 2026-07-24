@@ -116,7 +116,7 @@ Clique em Send.
 
 ## Resultado esperado: Aparecerá a seguinte mensagem: "A tarefa (Id da tarefa) foi atualizada com sucesso" e exibirá os novos dados enviados da tarefa.
 
-###(Dica: Faça um GET /api/tarefas/1 novamente para confirmar que a alteração foi salva).
+### (Dica: Faça um GET /api/tarefas/1 novamente para confirmar que a alteração foi salva).
 
 # 5. Exclusão de Tarefa (DELETE /api/tarefas/{id})
 Clique em DELETE /api/tarefas/{id} -> Test Request.
@@ -127,4 +127,4 @@ Clique em Send.
 
 ## Resultado esperado: A tarefa (Id da tarefa) foi excluída com sucesso.
 
-###(Se você tentar buscar ou listar essa tarefa novamente, receberá 404 Not Found ou a mensagem "Tarefa não encontrada".
+### (Se você tentar buscar ou listar essa tarefa novamente, receberá 404 Not Found ou a mensagem "Tarefa não encontrada".
