@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Desafio-tecnico-grupoSada-main/">
+    <Project Path="GestaoDeTarefas.Api/GestaoDeTarefas.Api.csproj" Id="c8696e0a-6762-4040-821f-fe24da6d10a7" />
+    <Project Path="GestaoDeTarefas.Domain/GestaoDeTarefas.Domain.csproj" Id="87a3e82f-7816-4ea5-b5b5-dfd6591012df" />
+    <Project Path="GestaoDeTarefas.Infrastructure/GestaoDeTarefas.Infrastructure.csproj" Id="a399d215-b290-4c5c-b22c-99d52f79390b" />
+  </Folder>
+</Solution>
