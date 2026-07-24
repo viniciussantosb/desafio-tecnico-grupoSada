@@ -1,0 +1,13 @@
+C:\Users\vinic\DesafioTecnicoGrupoSada\GestaoDeTarefas\GestaoDeTarefas.Domain\bin\Debug\net10.0\GestaoDeTarefas.Domain.deps.json
+C:\Users\vinic\DesafioTecnicoGrupoSada\GestaoDeTarefas\GestaoDeTarefas.Domain\bin\Debug\net10.0\GestaoDeTarefas.Domain.dll
+C:\Users\vinic\DesafioTecnicoGrupoSada\GestaoDeTarefas\GestaoDeTarefas.Domain\bin\Debug\net10.0\GestaoDeTarefas.Domain.pdb
+C:\Users\vinic\DesafioTecnicoGrupoSada\GestaoDeTarefas\GestaoDeTarefas.Domain\obj\Debug\net10.0\GestaoDeTarefas.Domain.csproj.AssemblyReference.cache
+C:\Users\vinic\DesafioTecnicoGrupoSada\GestaoDeTarefas\GestaoDeTarefas.Domain\obj\Debug\net10.0\GestaoDeTarefas.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vinic\DesafioTecnicoGrupoSada\GestaoDeTarefas\GestaoDeTarefas.Domain\obj\Debug\net10.0\GestaoDeTarefas.Domain.AssemblyInfoInputs.cache
+C:\Users\vinic\DesafioTecnicoGrupoSada\GestaoDeTarefas\GestaoDeTarefas.Domain\obj\Debug\net10.0\GestaoDeTarefas.Domain.AssemblyInfo.cs
+C:\Users\vinic\DesafioTecnicoGrupoSada\GestaoDeTarefas\GestaoDeTarefas.Domain\obj\Debug\net10.0\GestaoDeTarefas.Domain.csproj.CoreCompileInputs.cache
+C:\Users\vinic\DesafioTecnicoGrupoSada\GestaoDeTarefas\GestaoDeTarefas.Domain\obj\Debug\net10.0\GestaoDeTarefas.Domain.sourcelink.json
+C:\Users\vinic\DesafioTecnicoGrupoSada\GestaoDeTarefas\GestaoDeTarefas.Domain\obj\Debug\net10.0\GestaoDeTarefas.Domain.dll
+C:\Users\vinic\DesafioTecnicoGrupoSada\GestaoDeTarefas\GestaoDeTarefas.Domain\obj\Debug\net10.0\refint\GestaoDeTarefas.Domain.dll
+C:\Users\vinic\DesafioTecnicoGrupoSada\GestaoDeTarefas\GestaoDeTarefas.Domain\obj\Debug\net10.0\GestaoDeTarefas.Domain.pdb
+C:\Users\vinic\DesafioTecnicoGrupoSada\GestaoDeTarefas\GestaoDeTarefas.Domain\obj\Debug\net10.0\ref\GestaoDeTarefas.Domain.dll

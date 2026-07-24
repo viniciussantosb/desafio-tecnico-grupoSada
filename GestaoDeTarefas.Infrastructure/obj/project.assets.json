@@ -2,9 +2,28 @@
   "version": 4,
   "targets": {
     "net10.0": {
+      "Scalar.AspNetCore/2.16.16": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "GestaoDeTarefas.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Scalar.AspNetCore": "2.16.16"
+        },
         "compile": {
           "bin/placeholder/GestaoDeTarefas.Domain.dll": {}
         },
@@ -15,6 +34,25 @@
     }
   },
   "libraries": {
+    "Scalar.AspNetCore/2.16.16": {
+      "sha512": "Ax0e0bIh+Upf92k1+pTBUom3e/kbpu20qsrDYmmS1NM721Eq2xF8c789x6IbiNrvW8WwySRzPv/icYYhb6idSg==",
+      "type": "package",
+      "path": "scalar.aspnetcore/2.16.16",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net10.0/Scalar.AspNetCore.dll",
+        "lib/net10.0/Scalar.AspNetCore.xml",
+        "lib/net8.0/Scalar.AspNetCore.dll",
+        "lib/net8.0/Scalar.AspNetCore.xml",
+        "lib/net9.0/Scalar.AspNetCore.dll",
+        "lib/net9.0/Scalar.AspNetCore.xml",
+        "scalar.aspnetcore.2.16.16.nupkg.sha512",
+        "scalar.aspnetcore.nuspec"
+      ]
+    },
     "GestaoDeTarefas.Domain/1.0.0": {
       "type": "project",
       "path": "../GestaoDeTarefas.Domain/GestaoDeTarefas.Domain.csproj",
@@ -23,7 +61,8 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "GestaoDeTarefas.Domain >= 1.0.0"
+      "GestaoDeTarefas.Domain >= 1.0.0",
+      "Scalar.AspNetCore >= 2.16.16"
     ]
   },
   "packageFolders": {
@@ -82,6 +121,12 @@
       "net10.0": {
         "framework": "net10.0",
         "targetAlias": "net10.0",
+        "dependencies": {
+          "Scalar.AspNetCore": {
+            "target": "Package",
+            "version": "[2.16.16, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

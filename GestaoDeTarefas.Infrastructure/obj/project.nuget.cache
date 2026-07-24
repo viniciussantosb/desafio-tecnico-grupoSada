@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rjAegc/6OC8=",
+  "dgSpecHash": "sBj5Lb5Kv/Q=",
   "success": true,
   "projectFilePath": "C:\\Users\\vinic\\DesafioTecnicoGrupoSada\\GestaoDeTarefas\\GestaoDeTarefas.Infrastructure\\GestaoDeTarefas.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\vinic\\.nuget\\packages\\scalar.aspnetcore\\2.16.16\\scalar.aspnetcore.2.16.16.nupkg.sha512"
+  ],
   "logs": []
 }

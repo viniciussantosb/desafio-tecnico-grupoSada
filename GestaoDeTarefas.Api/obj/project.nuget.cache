@@ -1,8 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "DoPwiFjHbww=",
+  "dgSpecHash": "QMasE7UEXNE=",
   "success": true,
   "projectFilePath": "C:\\Users\\vinic\\DesafioTecnicoGrupoSada\\GestaoDeTarefas\\GestaoDeTarefas.Api\\GestaoDeTarefas.Api.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\vinic\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.8\\microsoft.aspnetcore.openapi.10.0.8.nupkg.sha512",
+    "C:\\Users\\vinic\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
+    "C:\\Users\\vinic\\.nuget\\packages\\scalar.aspnetcore\\2.16.16\\scalar.aspnetcore.2.16.16.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
+      "projectPath": "C:\\Users\\vinic\\DesafioTecnicoGrupoSada\\GestaoDeTarefas\\GestaoDeTarefas.Api\\GestaoDeTarefas.Api.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\vinic\\DesafioTecnicoGrupoSada\\GestaoDeTarefas\\GestaoDeTarefas.Api\\GestaoDeTarefas.Api.csproj",
+      "libraryId": "Microsoft.OpenApi",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }
