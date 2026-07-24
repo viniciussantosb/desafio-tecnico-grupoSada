@@ -40,7 +40,7 @@ Para este projeto, optei por organizar o código utilizando os princípios de Cl
 
 No painel do Scalar, você verá o grupo Tarefas com todas as rotas listadas.
 
-## 1. Cadastro de Tarefa (POST /api/tarefas)
+# 1. Cadastro de Tarefa (POST /api/tarefas)
 Permite criar uma nova tarefa e gera um ID numérico sequencial único (ex: 1, 2...).
 
 Clique no endpoint POST /api/tarefas.
@@ -57,19 +57,19 @@ JSON
   "status": "EmProgresso"
 }
 
-# Opções válidas de Status: "Pendente", "EmProgresso" ou "Concluida", Ou 1, 2, 3, que correspondem a 1 = "Pendente", 2 = "EmProgresso" ou 3 = "Concluida",
+## Opções válidas de Status: "Pendente", "EmProgresso" ou "Concluida", Ou 1, 2, 3, que correspondem a 1 = "Pendente", 2 = "EmProgresso" ou 3 = "Concluida",
 
 Clique em Send (Enviar).
 
-#Resultado esperado: Retorno com 201 Created contendo o JSON da tarefa criada com o "id": 1.
+## Resultado esperado: Retorno com 201 Created contendo o JSON da tarefa criada com o "id": 1.
 
-## 2. Listagem e Filtros (GET /api/tarefas)
+# 2. Listagem e Filtros (GET /api/tarefas)
 Permite visualizar todas as tarefas ou aplicar filtros por Status e/ou Data de Vencimento.
 
 A. Listar Todas
 Clique em GET /api/tarefas -> Test Request -> Send (sem preencher nenhum parâmetro).
 
-Resultado esperado: Retorno 200 OK com uma lista contendo todas as tarefas cadastradas.
+## Resultado esperado: Retorno 200 OK com uma lista contendo todas as tarefas cadastradas.
 
 B. Filtrar por Status
 Na mesma rota, vá na seção Query Parameters (Parâmetros de Consulta).
@@ -78,25 +78,25 @@ No campo status, digite: EmProgresso.
 
 Clique em Send.
 
-# Resultado esperado: Retorna apenas as tarefas com status "EmProgresso".
+## Resultado esperado: Retorna apenas as tarefas com status "EmProgresso".
 
 C. Filtrar por Data de Vencimento
 No campo dataVencimento, informe a data: 2026-08-15.
 
 Clique em Send.
 
-#Resultado esperado: Retorna as tarefas com vencimento nessa data.
+## Resultado esperado: Retorna as tarefas com vencimento nessa data.
 
-##3. Buscar por ID (GET /api/tarefas/{id})
+#3. Buscar por ID (GET /api/tarefas/{id})
 Clique em GET /api/tarefas/{id} -> Test Request.
 
 No campo de parâmetro id, digite: 1.
 
 Clique em Send.
 
-# Resultado esperado: Retorno 200 OK com os detalhes da Tarefa 1. (Se digitar um ID inexistente como 99, deve retornar 404 Not Found).
+## Resultado esperado: Retorno 200 OK com os detalhes da Tarefa 1. (Se digitar um ID inexistente como 99, deve retornar 404 Not Found).
 
-## 4. Edição de Tarefa (PUT /api/tarefas/{id})
+# 4. Edição de Tarefa (PUT /api/tarefas/{id})
 Permite atualizar o título, descrição, data de vencimento e status de uma tarefa existente.
 
 Clique em PUT /api/tarefas/{id} -> Test Request.
@@ -114,17 +114,17 @@ JSON
 }
 Clique em Send.
 
-# Resultado esperado: Aparecerá a seguinte mensagem: "A tarefa (Id da tarefa) foi atualizada com sucesso" e exibirá os novos dados enviados da tarefa.
+## Resultado esperado: Aparecerá a seguinte mensagem: "A tarefa (Id da tarefa) foi atualizada com sucesso" e exibirá os novos dados enviados da tarefa.
 
-(Dica: Faça um GET /api/tarefas/1 novamente para confirmar que a alteração foi salva).
+###(Dica: Faça um GET /api/tarefas/1 novamente para confirmar que a alteração foi salva).
 
-## 5. Exclusão de Tarefa (DELETE /api/tarefas/{id})
+# 5. Exclusão de Tarefa (DELETE /api/tarefas/{id})
 Clique em DELETE /api/tarefas/{id} -> Test Request.
 
 No parâmetro id, digite: 1.
 
 Clique em Send.
 
-# Resultado esperado: A tarefa (Id da tarefa) foi excluída com sucesso.
+## Resultado esperado: A tarefa (Id da tarefa) foi excluída com sucesso.
 
-(Se você tentar buscar ou listar essa tarefa novamente, receberá 404 Not Found ou a mensagem "Tarefa não encontrada".
+###(Se você tentar buscar ou listar essa tarefa novamente, receberá 404 Not Found ou a mensagem "Tarefa não encontrada".
