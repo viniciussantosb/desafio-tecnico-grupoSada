@@ -20,7 +20,7 @@ public class TarefaRepository : ITarefaRepository
         return await _context.Tarefas.FindAsync(id);
     }
 
-    public async Task<IEnumerable<Tarefa>> ObterTodasAsync(StatusTarefa? status, DateTime? dataVencimento)
+    public async Task<IEnumerable<Tarefa>> ObterTodasAsync(StatusTarefa? status, DateOnly? dataVencimento)
     {
         var query = _context.Tarefas.AsQueryable();
 
@@ -28,7 +28,7 @@ public class TarefaRepository : ITarefaRepository
             query = query.Where(t => t.Status == status.Value);
 
         if (dataVencimento.HasValue)
-            query = query.Where(t => t.DataVencimento.HasValue && t.DataVencimento.Value.Date == dataVencimento.Value.Date);
+            query = query.Where(t => t.DataVencimento.HasValue && t.DataVencimento.Value == dataVencimento.Value);
 
         return await query.ToListAsync();
     }

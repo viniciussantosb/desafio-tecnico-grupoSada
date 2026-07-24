@@ -36,7 +36,7 @@ public class TarefasController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<IActionResult> ObterTodas([FromQuery] StatusTarefa? status, [FromQuery] DateTime? dataVencimento)
+    public async Task<IActionResult> ObterTodas([FromQuery] StatusTarefa? status, [FromQuery] DateOnly? dataVencimento)
     {
         var tarefas = await _repository.ObterTodasAsync(status, dataVencimento);
         return Ok(tarefas);
