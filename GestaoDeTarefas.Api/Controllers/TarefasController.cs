@@ -51,7 +51,11 @@ public class TarefasController : ControllerBase
         tarefa.Atualizar(dto.Titulo, dto.Descricao, dto.DataVencimento, dto.Status);
         await _repository.AtualizarAsync(tarefa);
 
-        return NoContent();
+        return Ok(new
+        {
+            mensagem = $"Tarefa {id} atualizada com sucesso",
+            dados = tarefa
+        });
     }
 
     [HttpDelete("{id:int}")]

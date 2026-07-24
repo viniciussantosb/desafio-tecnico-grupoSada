@@ -1,8 +1,9 @@
 {
   "openapi": "3.1.1",
   "info": {
-    "title": "GestaoDeTarefas.Api | v1",
-    "version": "1.0.0"
+    "title": "API de Gestão de Tarefas",
+    "description": "## API de Gestão de Tarefas\r\n\r\n### Como usar:\r\n1. Para criar uma tarefa, envie um `POST` para `/api/tarefas`.\r\n2. O formato de data utilizado para vencimentos é `YYYY-MM-DD`.",
+    "version": "v1"
   },
   "servers": [
     {
