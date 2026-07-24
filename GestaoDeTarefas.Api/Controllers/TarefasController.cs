@@ -53,7 +53,7 @@ public class TarefasController : ControllerBase
 
         return Ok(new
         {
-            mensagem = $"Tarefa {id} atualizada com sucesso",
+            mensagem = $"Tarefa {id} foi atualizada com sucesso.",
             dados = tarefa
         });
     }
@@ -65,6 +65,9 @@ public class TarefasController : ControllerBase
         if (tarefa == null) return NotFound(new { mensagem = "Tarefa não encontrada." });
 
         await _repository.RemoverAsync(id);
-        return NoContent();
+        return Ok(new
+        {
+            mensagem = $"Tarefa {id} foi excluída com sucesso."
+        });
     }
 }
